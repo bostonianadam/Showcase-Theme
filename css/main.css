@@ -1,0 +1,57 @@
+/*Overrides*/
+a, .fas {
+    color: #F7CE3E;
+}
+.fa-arrow-right {
+    color: #373737;
+}
+.btn-primary {
+    background-color: #F7CE3E;
+    border-color: #F7CE3E;
+}
+.btn-primary:hover {
+    background-color: #373737;
+    border-color: #373737;
+}
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #373737;
+}
+
+/*Nav*/
+.navbar-nav .nav-item .nav-link {
+    text-transform: uppercase;
+}
+
+/*Section 1*/
+.section-1-content {
+    background: url('../img/1.jpg');
+    background-size: cover;
+    background-position: 50% 80%;
+    min-height: 300px;
+}
+.section-1-content h1 {
+    font-weight: bold;
+    color: #373737;
+}
+.section-1-content h2 {
+    color: #373737;
+}
+
+/*Section 2*/
+.section-2-content {
+    background: #fafafa;
+}
+
+/*Section 3*/
+#section-3 {
+    background: #eee;
+}
+
+/*Section 4*/
+#section-4 {
+    background: #fafafa;
+}
+.section-4-content h3 a, .section-4-content p a {
+    color: #373737;
+}
