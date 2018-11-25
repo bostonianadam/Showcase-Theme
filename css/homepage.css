@@ -1,0 +1,33 @@
+/*Section 1*/
+.section-1-content {
+    background: url('../img/1.jpg');
+    background-size: cover;
+    background-position: 50% 80%;
+    min-height: 300px;
+    border-bottom: 2px solid #F7CE3E;
+}
+.section-1-content h1 {
+    font-weight: bold;
+    color: #373737;
+}
+.section-1-content h2 {
+    color: #373737;
+}
+
+/*Section 2*/
+.section-2-content {
+    background: #fafafa;
+}
+
+/*Section 3*/
+#section-3 {
+    background: #eee;
+}
+
+/*Section 4*/
+#section-4 {
+    background: #fafafa;
+}
+.section-4-content h3 a, .section-4-content p a {
+    color: #373737;
+}

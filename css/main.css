@@ -5,6 +5,9 @@ a, .fas {
 .fa-arrow-right {
     color: #373737;
 }
+#section-5 .fas, #section-5 .fab {
+    color: #373737;
+}
 .btn-primary {
     background-color: #F7CE3E;
     border-color: #F7CE3E;
@@ -13,8 +16,14 @@ a, .fas {
     background-color: #373737;
     border-color: #373737;
 }
-h1, h2, h3 {
+h1, h2, h3, .nav-link, .footer-link {
     font-family: 'Montserrat', sans-serif;
+    color: #373737;
+}
+.footer-link {
+    font-size: 0.75rem;
+}
+.footer-link:hover {
     color: #373737;
 }
 
@@ -22,36 +31,6 @@ h1, h2, h3 {
 .navbar-nav .nav-item .nav-link {
     text-transform: uppercase;
 }
-
-/*Section 1*/
-.section-1-content {
-    background: url('../img/1.jpg');
-    background-size: cover;
-    background-position: 50% 80%;
-    min-height: 300px;
-}
-.section-1-content h1 {
+.active {
     font-weight: bold;
-    color: #373737;
-}
-.section-1-content h2 {
-    color: #373737;
-}
-
-/*Section 2*/
-.section-2-content {
-    background: #fafafa;
-}
-
-/*Section 3*/
-#section-3 {
-    background: #eee;
-}
-
-/*Section 4*/
-#section-4 {
-    background: #fafafa;
-}
-.section-4-content h3 a, .section-4-content p a {
-    color: #373737;
 }

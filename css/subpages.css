@@ -1,0 +1,23 @@
+/*For all subpages*/
+.section-1-content {
+    background: url('../img/1.jpg');
+    background-size: cover;
+    background-position: 50% 80%;
+    min-height: 150px;
+    border-bottom: 2px solid #F7CE3E;
+}
+
+/*For main blog page and blog posts*/
+#section-2 .card-columns {
+    column-count: 2;
+}
+p.card-blog-category {
+    color: #F7CE3E;
+    margin-bottom: 0.25rem;
+}
+h4.card-title a {
+    color: #373737;
+}
+.pipe {
+    padding: 0px 5px 0px 5px;
+}
