@@ -1,5 +1,5 @@
 # Showcase Theme
-A free Bootstrap 4, HTML, CSS theme
+The Showcase Theme by BostonianAdam is a free HTML 5/Bootstrap 4 theme for everyone.
 
 ## Built With
 * [Atom](https://atom.io/) - Atom editor
