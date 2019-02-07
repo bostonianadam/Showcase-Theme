@@ -1,4 +1,10 @@
 /*For all subpages*/
+blockquote {
+    padding: 20px;
+    border-left: 2px solid #F7CE3E;
+    background-color: #EFEFEF;
+    font-style: italic;
+}
 .section-1-content {
     background: url('../img/1.jpg');
     background-size: cover;
@@ -20,4 +26,33 @@ h4.card-title a {
 }
 .pipe {
     padding: 0px 5px 0px 5px;
+}
+.post-link-p .post-link-category, .post-link-p .post-link-tag {
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+.commentAuthorImg {
+    border-left: 2px solid #F7CE3E;
+}
+
+/*For widgets in aside*/
+ul.widget-link-list {
+    list-style-type: none;
+    padding-left: 2px;
+    margin-bottom: 2rem;
+}
+ul.widget-link-list li {
+    border-left: 2px solid #F7CE3E;
+    padding-left: 8px;
+    margin-bottom: 8px;
+}
+a.widget-link {
+    color: #373737;
+}
+.widget-link-p {
+    margin-bottom: 2rem;
+}
+.widget-link-p .widget-tag {
+    margin-right: 5px;
+    margin-bottom: 10px;
 }

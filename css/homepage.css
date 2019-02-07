@@ -13,6 +13,9 @@
 .section-1-content h2 {
     color: #373737;
 }
+.section-1-content a {
+    font-weight: bold;
+}
 
 /*Section 2*/
 .section-2-content {
@@ -22,6 +25,9 @@
 /*Section 3*/
 #section-3 {
     background: #eee;
+}
+.section-3-content-2 img {
+    border-bottom: 2px solid #F7CE3E;
 }
 
 /*Section 4*/

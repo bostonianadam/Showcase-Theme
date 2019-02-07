@@ -1,5 +1,5 @@
 /*Overrides*/
-a, .fas {
+a, a:hover, .fas {
     color: #F7CE3E;
 }
 .fa-arrow-right {
@@ -16,15 +16,30 @@ a, .fas {
     background-color: #373737;
     border-color: #373737;
 }
-h1, h2, h3, .nav-link, .footer-link {
+.btn-outline-primary {
+    color: #373737;
+    border-color: #F7CE3E;
+}
+.btn-outline-primary:hover {
+    background-color: #F7CE3E;
+    border-color: #F7CE3E;
+}
+h1, h2, h3, h4, h5, h6, .nav-link, .footer-link {
     font-family: 'Montserrat', sans-serif;
     color: #373737;
+}
+hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 .footer-link {
     font-size: 0.75rem;
 }
 .footer-link:hover {
     color: #373737;
+}
+.custom-button {
+    max-width: 150px;
 }
 
 /*Nav*/
