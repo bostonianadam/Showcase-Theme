@@ -2,8 +2,7 @@
 blockquote {
     padding: 20px;
     border-left: 2px solid #F7CE3E;
-    background-color: #EFEFEF;
-    font-style: italic;
+    background-color: #EEEEEE;
 }
 .section-1-content {
     background: url('../img/1.jpg');
@@ -30,6 +29,7 @@ h4.card-title a {
 .post-link-p .post-link-category, .post-link-p .post-link-tag {
     margin-right: 5px;
     margin-bottom: 10px;
+    color: #373737;
 }
 .commentAuthorImg {
     border-left: 2px solid #F7CE3E;
@@ -55,4 +55,15 @@ a.widget-link {
 .widget-link-p .widget-tag {
     margin-right: 5px;
     margin-bottom: 10px;
+    color: #373737;
+}
+
+/*Make blog post cards stack so 1 displays horizontally on smaller screens*/
+@media (max-width: 500px) {
+    #section-2 .card-columns {
+        column-count: 1;
+    }
+    #section-2 .card-columns .card {
+        margin-bottom: 2rem;
+    }
 }

@@ -8,10 +8,6 @@
 }
 .section-1-content h1 {
     font-weight: bold;
-    color: #373737;
-}
-.section-1-content h2 {
-    color: #373737;
 }
 .section-1-content a {
     font-weight: bold;
@@ -36,4 +32,12 @@
 }
 .section-4-content h3 a, .section-4-content p a {
     color: #373737;
+}
+
+/*On small screens, make buttons wide and stack*/
+@media (max-width: 420px) {
+    .section-1-content a.btn {
+        width:90%;
+        margin-bottom: 0.5rem;
+    }
 }

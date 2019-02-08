@@ -1,5 +1,5 @@
 /*Overrides*/
-a, a:hover, .fas {
+.fas {
     color: #F7CE3E;
 }
 .fa-arrow-right {
@@ -7,22 +7,6 @@ a, a:hover, .fas {
 }
 #section-5 .fas, #section-5 .fab {
     color: #373737;
-}
-.btn-primary {
-    background-color: #F7CE3E;
-    border-color: #F7CE3E;
-}
-.btn-primary:hover {
-    background-color: #373737;
-    border-color: #373737;
-}
-.btn-outline-primary {
-    color: #373737;
-    border-color: #F7CE3E;
-}
-.btn-outline-primary:hover {
-    background-color: #F7CE3E;
-    border-color: #F7CE3E;
 }
 h1, h2, h3, h4, h5, h6, .nav-link, .footer-link {
     font-family: 'Montserrat', sans-serif;
