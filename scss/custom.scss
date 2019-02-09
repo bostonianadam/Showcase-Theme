@@ -1,0 +1,7 @@
+//Bootstrap custom overrides
+$showcase:#F7CE3E;
+$showcaseblack: #373737;
+$primary: $showcase;
+$body-color: $showcaseblack;
+
+@import "../bootstrap/scss/bootstrap";
