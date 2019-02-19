@@ -37,7 +37,7 @@
 
         <!--Start of header with logo and nav-->
         <header id="header">
-            <nav id="navbar" class="navbar navbar-expand-sm navbar-light">
+            <nav id="navbar" role="navigation" class="navbar navbar-expand-sm navbar-light">
                 <div class="container">
                     <a href="index.html" class="navbar-brand"><img src="img/logo.jpg" alt="Showcase Theme"></a>
                     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -60,89 +60,93 @@
             </nav>
         </header>
 
-        <!--Start of section 1 with wide image, text, buttons-->
-        <section id="section-1">
-            <div class="row">
-                <div class="col">
-                    <div class="section-1-content text-center text-white">
-                        <h1 class="pt-5">Site Title Here</h2>
-                        <h2 class="pb-3">Sub-Title Here</h3>
-                        <a href="https://github.com/bostonianadam/showcase-theme" class="btn btn-primary btn-lg" target="_blank">Download Theme</a>
-                        <a href="contact.html" class="btn btn-primary btn-lg">Contact Us</a>
+        <main id="main" role="main">
+
+            <!--Start of section 1 with wide image, text, buttons-->
+            <section id="section-1">
+                <div class="row">
+                    <div class="col">
+                        <div class="section-1-content text-center text-white">
+                            <h1 class="pt-5">Site Title Here</h2>
+                            <h2 class="pb-3">Sub-Title Here</h3>
+                            <a href="https://github.com/bostonianadam/showcase-theme" class="btn btn-primary btn-lg" target="_blank">Download Theme</a>
+                            <a href="contact.html" class="btn btn-primary btn-lg">Contact Us</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <p class="small mb-0">Photo by <a href="https://burst.shopify.com/@matthew_henry?utm_campaign=photo_credit&amp;utm_content=Free+Tidy+Desk+In+Window+Light+Photo+%E2%80%94+High+Res+Pictures&amp;utm_medium=referral&amp;utm_source=credit">Matthew Henry</a> from <a href="https://burst.shopify.com/technology?utm_campaign=photo_credit&amp;utm_content=Free+Tidy+Desk+In+Window+Light+Photo+%E2%80%94+High+Res+Pictures&amp;utm_medium=referral&amp;utm_source=credit">Burst</a></p>
-                </div>
-            </div>
-        </section>
-
-        <!--Start of section 2 with wide text block with large header text-->
-        <section id="section-2" class="mt-4">
-            <div class="row">
-                <div class="col">
-                    <div class="section-2-content text-center p-4">
-                        <h3>Text Header</h3>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet, neque id lacinia convallis, mauris arcu fermentum quam, id aliquet metus dolor vel neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet, neque id lacinia convallis, mauris arcu fermentum quam, id aliquet metus dolor vel neque. Lorem ipsum dolor sit amet.</p>
+                <div class="row">
+                    <div class="col">
+                        <p class="small mb-0">Photo by <a href="https://burst.shopify.com/@matthew_henry?utm_campaign=photo_credit&amp;utm_content=Free+Tidy+Desk+In+Window+Light+Photo+%E2%80%94+High+Res+Pictures&amp;utm_medium=referral&amp;utm_source=credit">Matthew Henry</a> from <a href="https://burst.shopify.com/technology?utm_campaign=photo_credit&amp;utm_content=Free+Tidy+Desk+In+Window+Light+Photo+%E2%80%94+High+Res+Pictures&amp;utm_medium=referral&amp;utm_source=credit">Burst</a></p>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!--Start of section 3 with two columns, left side has text, right side has image-->
-        <section id="section-3" class="mt-5">
-            <div class="row">
-                <div class="col-lg-6 pr-0">
-                    <div class="section-3-content-1 p-4">
-                        <h3>Text Header</h3>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet, neque id lacinia convallis, mauris arcu fermentum quam, id aliquet metus dolor vel neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet, neque id lacinia convallis, mauris arcu fermentum quam, id aliquet metus dolor vel neque.</p>
-                        <p class="small mb-0">Photo by <a href="https://burst.shopify.com/@lightleaksin?utm_campaign=photo_credit&amp;utm_content=Picture+of+Business+Person+Desk+Flatlay+%E2%80%94+Free+Stock+Photo&amp;utm_medium=referral&amp;utm_source=credit">Samantha Hurley</a> from <a href="https://burst.shopify.com/data?utm_campaign=photo_credit&amp;utm_content=Picture+of+Business+Person+Desk+Flatlay+%E2%80%94+Free+Stock+Photo&amp;utm_medium=referral&amp;utm_source=credit">Burst</a></p>
+            <!--Start of section 2 with wide text block with large header text-->
+            <section id="section-2" class="mt-4">
+                <div class="row">
+                    <div class="col">
+                        <div class="section-2-content text-center p-4">
+                            <h3>Text Header</h3>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet, neque id lacinia convallis, mauris arcu fermentum quam, id aliquet metus dolor vel neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet, neque id lacinia convallis, mauris arcu fermentum quam, id aliquet metus dolor vel neque. Lorem ipsum dolor sit amet.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 pl-0">
-                    <div class="section-3-content-2">
-                        <img src="img/3.jpg" alt="" class="img-fluid d-none d-lg-block">
+            </section>
+
+            <!--Start of section 3 with two columns, left side has text, right side has image-->
+            <section id="section-3" class="mt-5">
+                <div class="row">
+                    <div class="col-lg-6 pr-0">
+                        <div class="section-3-content-1 p-4">
+                            <h3>Text Header</h3>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet, neque id lacinia convallis, mauris arcu fermentum quam, id aliquet metus dolor vel neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet, neque id lacinia convallis, mauris arcu fermentum quam, id aliquet metus dolor vel neque.</p>
+                            <p class="small mb-0">Photo by <a href="https://burst.shopify.com/@lightleaksin?utm_campaign=photo_credit&amp;utm_content=Picture+of+Business+Person+Desk+Flatlay+%E2%80%94+Free+Stock+Photo&amp;utm_medium=referral&amp;utm_source=credit">Samantha Hurley</a> from <a href="https://burst.shopify.com/data?utm_campaign=photo_credit&amp;utm_content=Picture+of+Business+Person+Desk+Flatlay+%E2%80%94+Free+Stock+Photo&amp;utm_medium=referral&amp;utm_source=credit">Burst</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pl-0">
+                        <div class="section-3-content-2">
+                            <img src="img/3.jpg" alt="" class="img-fluid d-none d-lg-block">
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!--Start of section 4 with three columns, with large icons and text-->
-        <section id="section-4" class="mt-5">
-            <div class="row">
-                <div class="section-4-content col-md-4 text-center pt-3 pb-3">
-                    <i class="fas fa-pen fa-3x mb-2"></i>
-                    <h3><a href="#">Link 1</a></h3>
-                    <p><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a> <i class="fas fa-arrow-right"></i></p>
+            <!--Start of section 4 with three columns, with large icons and text-->
+            <section id="section-4" class="mt-5">
+                <div class="row">
+                    <div class="section-4-content col-md-4 text-center pt-3 pb-3">
+                        <i class="fas fa-pen fa-3x mb-2"></i>
+                        <h3><a href="#">Link 1</a></h3>
+                        <p><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a> <i class="fas fa-arrow-right"></i></p>
+                    </div>
+                    <div class="section-4-content col-md-4 text-center pt-3 pb-3">
+                        <i class="fas fa-file-alt fa-3x mb-2"></i>
+                        <h3><a href="#">Link 2</a></h3>
+                        <p><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a> <i class="fas fa-arrow-right"></i></p>
+                    </div>
+                    <div class="section-4-content col-md-4 text-center pt-3 pb-3">
+                        <i class="fas fa-users fa-3x mb-2"></i>
+                        <h3><a href="#">Link 3</a></h3>
+                        <p><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a> <i class="fas fa-arrow-right"></i></p>
+                    </div>
                 </div>
-                <div class="section-4-content col-md-4 text-center pt-3 pb-3">
-                    <i class="fas fa-file-alt fa-3x mb-2"></i>
-                    <h3><a href="#">Link 2</a></h3>
-                    <p><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a> <i class="fas fa-arrow-right"></i></p>
-                </div>
-                <div class="section-4-content col-md-4 text-center pt-3 pb-3">
-                    <i class="fas fa-users fa-3x mb-2"></i>
-                    <h3><a href="#">Link 3</a></h3>
-                    <p><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a> <i class="fas fa-arrow-right"></i></p>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <!--Start of social media icons section-->
-        <section id="section-5" class="mt-5">
-            <h3 class="text-center">Follow Us</h3>
-            <div class="row text-center">
-                <div class="col-md-3"><i class="fab fa-facebook"> <a class="footer-link" href="#" title="Facebook">Facebook</a></i></div>
-                <div class="col-md-3"><i class="fab fa-twitter"> <a class="footer-link" href="#" title="Twitter">Twitter</a></i></div>
-                <div class="col-md-3"><i class="fab fa-pinterest"> <a class="footer-link" href="#" title="Pinterest">Pinterest</a></i></div>
-                <div class="col-md-3"><i class="fab fa-instagram"> <a class="footer-link" href="#" title="Instagram">Instagram</a></i></div>
-            </div>
-        </section>
+            <!--Start of social media icons section-->
+            <section id="section-5" class="mt-5">
+                <h3 class="text-center">Follow Us</h3>
+                <div class="row text-center">
+                    <div class="col-md-3"><i class="fab fa-facebook"> <a class="footer-link" href="#" title="Facebook">Facebook</a></i></div>
+                    <div class="col-md-3"><i class="fab fa-twitter"> <a class="footer-link" href="#" title="Twitter">Twitter</a></i></div>
+                    <div class="col-md-3"><i class="fab fa-pinterest"> <a class="footer-link" href="#" title="Pinterest">Pinterest</a></i></div>
+                    <div class="col-md-3"><i class="fab fa-instagram"> <a class="footer-link" href="#" title="Instagram">Instagram</a></i></div>
+                </div>
+            </section>
+
+        </main>
 
         <!--Start of footer section-->
-        <footer id="section-footer" class="text-center mt-5">
+        <footer id="section-footer" role="contentinfo" class="text-center mt-5">
             <div class="row">
                 <div class="col">
                     <p class="small mb-1 text-uppercase">Showcase Theme</p>
