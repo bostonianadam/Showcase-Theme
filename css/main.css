@@ -33,3 +33,16 @@ hr {
 .active {
     font-weight: bold;
 }
+
+/*Other*/
+.back-to-top {
+    display: block;
+    text-align: right;
+    right: 10px;
+    bottom: 10px;
+}
+@media(max-width: 768px) {
+    .back-to-top {
+        display: none;
+    }
+}
