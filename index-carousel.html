@@ -31,6 +31,7 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <link rel="stylesheet" href="css/main.css" media="all">
 <link rel="stylesheet" href="css/homepage.css" media="all">
+<link rel="stylesheet" href="css/carousel.css" media="all">
 </head>
 <body>
     <div class="container">
@@ -64,21 +65,56 @@
 
             <!--Start of section 1 with wide image, text, buttons-->
             <section id="section-1">
-                <div class="row">
-                    <div class="col">
-                        <div class="section-1-content text-center text-white">
-                            <h1 class="pt-5">Site Title Here</h2>
-                            <h2 class="pb-3">Sub-Title Here</h3>
-                            <a href="https://github.com/bostonianadam/showcase-theme" class="btn btn-primary btn-lg" target="_blank">Download Theme</a>
-                            <a href="contact.html" class="btn btn-primary btn-lg">Contact Us</a>
+
+                <!--Start of carousel-->
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="3000">
+                            <img src="img/carousel-1.jpg" alt="" class="d-block w-100" role="img">
+        
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <h2>Headline 1</h2>
+                                    <p class="carousel-caption-text d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet, neque id lacinia convallis. Example carousel photo by <a href="https://burst.shopify.com/@matthew_henry?utm_campaign=photo_credit&amp;utm_content=Picture+of+Working+At+Night+-+Free+Stock+Photo&amp;utm_medium=referral&amp;utm_source=credit">Matthew Henry</a> from <a href="https://burst.shopify.com/writing?utm_campaign=photo_credit&amp;utm_content=Picture+of+Working+At+Night+-+Free+Stock+Photo&amp;utm_medium=referral&amp;utm_source=credit">Burst</a></p>
+                                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-interval="3000">
+                            <img src="img/carousel-2.jpg" alt="" class="d-block w-100" role="img">
+        
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <h2>Headline 2</h2>
+                                    <p class="carousel-caption-text d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet, neque id lacinia convallis. Example carousel photo by <a href="https://burst.shopify.com/@matthew_henry?utm_campaign=photo_credit&amp;utm_content=Picture+of+Laptop+From+Above+-+Free+Stock+Photo&amp;utm_medium=referral&amp;utm_source=credit">Matthew Henry</a> from <a href="https://burst.shopify.com/api-work-productivity?utm_campaign=photo_credit&amp;utm_content=Picture+of+Laptop+From+Above+-+Free+Stock+Photo&amp;utm_medium=referral&amp;utm_source=credit">Burst</a></p>
+                                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Download now</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-interval="3000">
+                            <img src="img/carousel-3.jpg" alt="" class="d-block w-100" role="img">
+        
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <h2>Headline 3</h2>
+                                    <p class="carousel-caption-text d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet, neque id lacinia convallis. Example carousel photo by <a href="https://burst.shopify.com/@rawpixel?utm_campaign=photo_credit&amp;utm_content=Free+Fistbump+Over+Desk+Image%3A+Stunning+Photography&amp;utm_medium=referral&amp;utm_source=credit">rawpixel</a> from <a href="https://burst.shopify.com/business?utm_campaign=photo_credit&amp;utm_content=Free+Fistbump+Over+Desk+Image%3A+Stunning+Photography&amp;utm_medium=referral&amp;utm_source=credit">Burst</a></p>
+                                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Contact us</a></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    
+                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
+        
+                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <p class="small mb-0">Photo by <a href="https://burst.shopify.com/@matthew_henry?utm_campaign=photo_credit&amp;utm_content=Free+Tidy+Desk+In+Window+Light+Photo+%E2%80%94+High+Res+Pictures&amp;utm_medium=referral&amp;utm_source=credit">Matthew Henry</a> from <a href="https://burst.shopify.com/technology?utm_campaign=photo_credit&amp;utm_content=Free+Tidy+Desk+In+Window+Light+Photo+%E2%80%94+High+Res+Pictures&amp;utm_medium=referral&amp;utm_source=credit">Burst</a></p>
-                    </div>
-                </div>
+                <!--End of carousel-->
+
             </section>
 
             <!--Start of section 2 with wide text block with large header text-->
@@ -87,7 +123,7 @@
                     <div class="col">
                         <div class="section-2-content text-center p-4">
                             <h3>Text Header</h3>
-                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet, neque id lacinia convallis, mauris arcu fermentum quam, id aliquet metus dolor vel neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet, neque id lacinia convallis, mauris arcu fermentum quam, id aliquet metus dolor vel neque. <a href="index-carousel.html">See homepage with carousel</a>.</p>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet, neque id lacinia convallis, mauris arcu fermentum quam, id aliquet metus dolor vel neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet, neque id lacinia convallis, mauris arcu fermentum quam, id aliquet metus dolor vel neque. Lorem ipsum dolor sit amet.</p>
                         </div>
                     </div>
                 </div>
