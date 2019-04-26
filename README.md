@@ -3,6 +3,10 @@ The Showcase Theme by BostonianAdam is a free HTML 5/Bootstrap 4 theme for every
 
 ## Built With
 * [Atom](https://atom.io/) - Atom editor
+* HTML5
+* [Bootstrap 4](https://getbootstrap.com/)
+* [Font Awesome](https://fontawesome.com/)
+* [jQuery](https://jquery.com/)
 
 ## Authors
 * **BostonianAdam**
