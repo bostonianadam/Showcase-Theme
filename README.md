@@ -9,7 +9,7 @@ The Showcase Theme by BostonianAdam is a free HTML 5/Bootstrap 4 theme for every
 * [jQuery](https://jquery.com/)
 
 ## Authors
-* **BostonianAdam**
+* **BostonianAdam** - [bostonianadam.com](https://bostonianadam.com/), [@BostonianAdam](https://twitter.com/BostonianAdam)
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
