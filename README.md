@@ -1,6 +1,9 @@
 # Showcase Theme
 The Showcase Theme by BostonianAdam is a free HTML 5/Bootstrap 4 theme for everyone.
 
+## Demo
+[hub.bostonianadam.com/themes/showcase/](https://hub.bostonianadam.com/themes/showcase/)
+
 ## Built With
 * [Atom](https://atom.io/) - Atom editor
 * HTML5
