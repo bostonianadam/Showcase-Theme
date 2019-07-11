@@ -4,7 +4,7 @@
     background-size: cover;
     background-position: 50% 80%;
     min-height: 300px;
-    border-bottom: 2px solid #F7CE3E;
+    border-bottom: 2px solid var(--theme-primary-color);
 }
 .section-1-content h1 {
     font-weight: bold;
@@ -23,7 +23,7 @@
     background: #eee;
 }
 .section-3-content-2 img {
-    border-bottom: 2px solid #F7CE3E;
+    border-bottom: 2px solid var(--theme-primary-color);
 }
 
 /*Section 4*/
@@ -31,7 +31,7 @@
     background: #fafafa;
 }
 .section-4-content h3 a, .section-4-content p a {
-    color: #373737;
+    color: var(--theme-secondary-color);
 }
 
 /*On small screens, make buttons wide and stack*/

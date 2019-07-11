@@ -1,16 +1,22 @@
+/*Variables*/
+:root {
+    --theme-primary-color: #F7CE3E;
+    --theme-secondary-color: #373737;
+}
+
 /*Overrides*/
 .fas {
-    color: #F7CE3E;
+    color: var(--theme-primary-color);
 }
 .fa-arrow-right {
-    color: #373737;
+    color: var(--theme-secondary-color);
 }
 #section-5 .fas, #section-5 .fab {
-    color: #373737;
+    color: var(--theme-secondary-color);
 }
 h1, h2, h3, h4, h5, h6, .nav-link, .footer-link {
     font-family: 'Montserrat', sans-serif;
-    color: #373737;
+    color: var(--theme-secondary-color);
 }
 hr {
     margin-top: 2rem;
@@ -20,7 +26,7 @@ hr {
     font-size: 0.75rem;
 }
 .footer-link:hover {
-    color: #373737;
+    color: var(--theme-secondary-color);
 }
 .custom-button {
     max-width: 150px;

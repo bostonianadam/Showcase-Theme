@@ -1,7 +1,7 @@
 /*For all subpages*/
 blockquote {
     padding: 20px;
-    border-left: 2px solid #F7CE3E;
+    border-left: 2px solid var(--theme-primary-color);
     background-color: #EEEEEE;
 }
 .section-1-content {
@@ -9,7 +9,7 @@ blockquote {
     background-size: cover;
     background-position: 50% 80%;
     min-height: 150px;
-    border-bottom: 2px solid #F7CE3E;
+    border-bottom: 2px solid var(--theme-primary-color);
 }
 
 /*For main blog page and blog posts*/
@@ -17,11 +17,11 @@ blockquote {
     column-count: 2;
 }
 p.card-blog-category {
-    color: #F7CE3E;
+    color: var(--theme-primary-color);
     margin-bottom: 0.25rem;
 }
 h4.card-title a {
-    color: #373737;
+    color: var(--theme-secondary-color);
 }
 .pipe {
     padding: 0px 5px 0px 5px;
@@ -29,10 +29,10 @@ h4.card-title a {
 .post-link-p .post-link-category, .post-link-p .post-link-tag {
     margin-right: 5px;
     margin-bottom: 10px;
-    color: #373737;
+    color: var(--theme-secondary-color);
 }
 .commentAuthorImg {
-    border-left: 2px solid #F7CE3E;
+    border-left: 2px solid var(--theme-primary-color);
 }
 
 /*For widgets in aside*/
@@ -42,12 +42,12 @@ ul.widget-link-list {
     margin-bottom: 2rem;
 }
 ul.widget-link-list li {
-    border-left: 2px solid #F7CE3E;
+    border-left: 2px solid var(--theme-primary-color);
     padding-left: 8px;
     margin-bottom: 8px;
 }
 a.widget-link {
-    color: #373737;
+    color: var(--theme-secondary-color);
 }
 .widget-link-p {
     margin-bottom: 2rem;
@@ -55,7 +55,7 @@ a.widget-link {
 .widget-link-p .widget-tag {
     margin-right: 5px;
     margin-bottom: 10px;
-    color: #373737;
+    color: var(--theme-secondary-color);
 }
 
 /*Make blog post cards stack so 1 displays horizontally on smaller screens*/
