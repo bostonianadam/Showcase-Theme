@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 * Aria attributes to various places
 * Search form to the primary navigation
-*JS functionality for the back to top icon so it appears only when scrolling down the page
+* JS functionality for the back to top icon so it appears only when scrolling down the page
 
 ### Changed
 * Minor edits to social media and footer areas
