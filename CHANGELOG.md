@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file.
 * Minor edits to social media and footer areas
 * Using different smaller back to top icon
 * Updated jQuery include to version 3.4.1.min
+* Edits and additions to the main.css file
 
 ### Removed
 * OG social media tags
