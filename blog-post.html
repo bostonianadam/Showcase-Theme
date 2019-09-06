@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" prefix="og:http://ogp.me/ns#">
+<html lang="en">
 <head>
-<title>Showcase Theme by BostonianAdam - Blog Post</title>
+<title>Blog Post - Showcase Theme by BostonianAdam</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
 <link rel="icon" type="image/png" href="showcase-theme-favicon-32x32.png" sizes="32x32">
@@ -19,7 +19,7 @@
 
         <!--Start of header with logo and nav-->
         <header id="header">
-            <nav id="navbar" role="navigation" class="navbar navbar-expand-sm navbar-light">
+            <nav id="navbar" role="navigation" aria-label="primary" class="navbar navbar-expand-sm navbar-light px-0">
                 <div class="container">
                     <a href="index.html" class="navbar-brand"><img src="img/logo.jpg" alt="Showcase Theme"></a>
                     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -37,6 +37,10 @@
                             </li>
                             <li class="nav-item px-2"><a href="contact.html" class="nav-link">Contact Us</a></li>
                         </ul>
+                        <form class="form-inline ml-auto searchForm" role="search" aria-label="site">
+                            <input class="form-control searchBox" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn" type="submit"><i class="fas fa-caret-square-right fa-2x" title="Search"></i></button>
+                        </form>
                     </div>
                 </div>
             </nav>
@@ -45,7 +49,7 @@
         <main id="main" role="main">
 
             <!--Start of section 1 with wide image-->
-            <section id="section-1">
+            <section id="section-1" role="region">
                 <div class="row">
                     <div class="col">
                         <div class="section-1-content"></div>
@@ -59,15 +63,13 @@
             </section>
 
             <!--Start of section 2 with content-->
-            <section id="section-2" class="mt-4">
+            <section id="section-2" class="mt-4" role="region">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-9 pl-0">
-
-                            <article>
+                            <article role="article">
                                 <h1>Blog Post Title</h1>
                                 <p><small class="text-muted">By Author Name, 1/20/2019 <span class="pipe">|</span> <i class="far fa-comment"></i> 0 <span class="pipe">|</span> <i class="far fa-clock"></i> 2 minute read</small></p>
-
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus tincidunt rutrum. Sed orci orci, posuere in fringilla eu, consequat quis purus. Donec pretium cursus leo, tristique accumsan nisl. Mauris lobortis nulla vel interdum laoreet. Quisque fringilla eget augue ac scelerisque. Nam quis lorem gravida, venenatis ante ut, maximus nunc. Nulla venenatis elementum urna, sit amet pharetra lectus volutpat in. Maecenas consequat dolor mauris, sit amet ullamcorper nisi euismod vel. Aliquam malesuada placerat nulla, vel tristique metus mollis egestas. Nunc in odio pellentesque nibh tristique egestas ac vel turpis. Etiam nibh nibh, rutrum id facilisis quis, viverra non sem.</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus tincidunt rutrum. Sed orci orci, posuere in fringilla eu, consequat quis purus. Donec pretium cursus leo, tristique accumsan nisl. Mauris lobortis nulla vel interdum laoreet. Quisque fringilla eget augue ac scelerisque. Nam quis lorem gravida, venenatis ante ut, maximus nunc. Nulla venenatis elementum urna, sit amet pharetra lectus volutpat in. Maecenas consequat dolor mauris, sit amet ullamcorper nisi euismod vel. Aliquam malesuada placerat nulla, vel tristique metus mollis egestas. Nunc in odio pellentesque nibh tristique egestas ac vel turpis. Etiam nibh nibh, rutrum id facilisis quis, viverra non sem.</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus tincidunt rutrum. Sed orci orci, posuere in fringilla eu, consequat quis purus. Donec pretium cursus leo, tristique accumsan nisl. Mauris lobortis nulla vel interdum laoreet. Quisque fringilla eget augue ac scelerisque. Nam quis lorem gravida, venenatis ante ut, maximus nunc. Nulla venenatis elementum urna, sit amet pharetra lectus volutpat in. Maecenas consequat dolor mauris, sit amet ullamcorper nisi euismod vel. Aliquam malesuada placerat nulla, vel tristique metus mollis egestas. Nunc in odio pellentesque nibh tristique egestas ac vel turpis. Etiam nibh nibh, rutrum id facilisis quis, viverra non sem.</p>
@@ -86,28 +88,33 @@
                                 </div>
                                 <div class="col-md-4">
                                     <h5>Share</h5>
-                                    <p>
-                                        <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button&size=small&mobile_iframe=true&width=59&height=20&appId" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-
-                                        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                                    </p>
+                                    <p>Share links</p>
                                 </div>
                             </div>
 
                             <hr>
                             <h5>Leave a comment</h5>
-                            <form>
-                                <div class="row">
+                            <form role="form">
+                                <div class="form-row">
                                     <div class="col-md-6">
-                                        <div class="form-group"><input type="text" class="form-control" placeholder="Name"></div>
+                                        <div class="form-group">
+                                            <label for="txtName">Name</label>
+                                            <input type="text" id="txtName" class="form-control" placeholder="Name">
+                                        </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="form-group"><input type="email" class="form-control" placeholder="Email"></div>
+                                        <div class="form-group">
+                                            <label for="txtEmail">Email</label>
+                                            <input type="email" id="txtEmail" class="form-control" placeholder="Email">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="row">
+                                <div class="form-row">
                                     <div class="col-md-12">
-                                        <div class="form-group"><textarea class="form-control" placeholder="Message"></textarea></div>
+                                        <div class="form-group">
+                                            <label for="txtMessage">Message</label>
+                                            <textarea id="txtMessage" class="form-control" placeholder="Message" rows="3"></textarea>
+                                        </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group"><input type="submit" value="Submit" class="btn btn-primary btn-block custom-button"></div>
@@ -133,8 +140,7 @@
 
                         </div>
                         <div class="col-md-3">
-                            <aside>
-
+                            <aside role="complementary" aria-label="side bar">
                                 <h5>Recent Posts</h5>
                                 <ul class="widget-link-list">
                                     <li><a class="widget-link" href="#">Lorem ipsum dolor sit amet</a></li>
@@ -166,7 +172,6 @@
                                     <li><a class="widget-link" href="#">December 2018</a></li>
                                     <li><a class="widget-link" href="#">November 2018</a></li>
                                 </ul>
-
                             </aside>
                         </div>
                     </div>
@@ -174,13 +179,13 @@
             </section>
 
             <!--Start of social media icons section-->
-            <section id="section-5" class="mt-5">
+            <section id="section-5" class="mt-5" role="region">
                 <h3 class="text-center">Follow Us</h3>
                 <div class="row text-center">
                     <div class="col-md-3"><i class="fab fa-facebook"> <a class="footer-link" href="#" title="Facebook">Facebook</a></i></div>
                     <div class="col-md-3"><i class="fab fa-twitter"> <a class="footer-link" href="#" title="Twitter">Twitter</a></i></div>
-                    <div class="col-md-3"><i class="fab fa-pinterest"> <a class="footer-link" href="#" title="Pinterest">Pinterest</a></i></div>
                     <div class="col-md-3"><i class="fab fa-instagram"> <a class="footer-link" href="#" title="Instagram">Instagram</a></i></div>
+                    <div class="col-md-3"><i class="fab fa-pinterest"> <a class="footer-link" href="#" title="Pinterest">Pinterest</a></i></div>
                 </div>
             </section>
 
@@ -190,18 +195,16 @@
         <footer id="section-footer" role="contentinfo" class="text-center mt-5">
             <div class="row">
                 <div class="col">
-                    <p class="small mb-1 text-uppercase">Showcase Theme</p>
-                    <p class="small mb-1">A Free HTML 5/Bootstrap 4 Theme</p>
+                    <p class="small mb-1">Copyright &copy; 2019</p>
+                    <p class="small mb-1">Showcase Theme by <a href="https://hub.bostonianadam.com/" title="BostonianAdam Hub">BostonianAdam Hub</a></p>
                 </div>
             </div>
         </footer>
 
     </div>
+    <div class="top-link fixed-bottom"><a href="#" title="Back to top"><i class="fas fa-caret-square-up fa-3x"></i><span class="sr-only sr-only-focusable">Back to top</span></a></div>
 
-    <div id="top-link" class="fixed-bottom back-to-top"><a href="#" title="Back to top"><i class="fas fa-arrow-alt-circle-up fa-5x"></i><span class="sr-only sr-only-focusable">Back to top</span></a></div>
-
-<script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="js/site-js.js"></script>
 

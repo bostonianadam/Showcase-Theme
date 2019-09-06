@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" prefix="og:http://ogp.me/ns#">
+<html lang="en">
 <head>
-<title>Showcase Theme by BostonianAdam - Blog</title>
+<title>Blog - Showcase Theme by BostonianAdam</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
 <link rel="icon" type="image/png" href="showcase-theme-favicon-32x32.png" sizes="32x32">
@@ -19,7 +19,7 @@
 
         <!--Start of header with logo and nav-->
         <header id="header">
-            <nav id="navbar" role="navigation" class="navbar navbar-expand-sm navbar-light">
+            <nav id="navbar" role="navigation" aria-label="primary" class="navbar navbar-expand-sm navbar-light px-0">
                 <div class="container">
                     <a href="index.html" class="navbar-brand"><img src="img/logo.jpg" alt="Showcase Theme"></a>
                     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -37,6 +37,10 @@
                             </li>
                             <li class="nav-item px-2"><a href="contact.html" class="nav-link">Contact Us</a></li>
                         </ul>
+                        <form class="form-inline ml-auto searchForm" role="search" aria-label="site">
+                            <input class="form-control searchBox" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn" type="submit"><i class="fas fa-caret-square-right fa-2x" title="Search"></i></button>
+                        </form>
                     </div>
                 </div>
             </nav>
@@ -45,7 +49,7 @@
         <main id="main" role="main">
 
             <!--Start of section 1 with wide image-->
-            <section id="section-1">
+            <section id="section-1" role="region">
                 <div class="row">
                     <div class="col">
                         <div class="section-1-content"></div>
@@ -59,7 +63,7 @@
             </section>
 
             <!--Start of section 2 with blog cards-->
-            <section id="section-2" class="mt-4">
+            <section id="section-2" class="mt-4" role="region">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-9">
@@ -105,22 +109,25 @@
                                         <p class="card-text"><small class="text-muted">1/20/2019 <span class="pipe">|</span> <i class="far fa-comment"></i> 0 <span class="pipe">|</span> <i class="far fa-clock"></i> 2 minute read</small></p>
                                     </div>
                                 </div>
-
-                                <div class="card mt-2">
-                                    <img class="card-img-top" src="https://source.unsplash.com/random/300x200" alt="">
-                                    <div class="card-body">
-                                        <p class="card-blog-category"><small>Category</small></p>
-                                        <h4 class="card-title"><a href="blog-post.html">Blog Post Title</a></h4>
-                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet, neque id lacinia convallis, mauris arcu fermentum quam, id aliquet metus dolor vel neque. <a href="blog-post.html">Read more</a></p>
-                                        <p class="card-text"><small class="text-muted">1/20/2019 <span class="pipe">|</span> <i class="far fa-comment"></i> 0 <span class="pipe">|</span> <i class="far fa-clock"></i> 2 minute read</small></p>
-                                    </div>
-                                </div>
-
                             </div>
+
+                            <nav class="mt-4" aria-label="Blog posts navigation">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item disabled"><a href="#" class="page-link" tabindex="-1" aria-disabled="true"><i class="fas fa-arrow-left" title="Previous"></i></a></li>
+                                    <li class="page-item active" aria-current="page">
+                                        <span class="page-link">1
+                                            <span class="sr-only">(current)</span>
+                                        </span>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#" title="Next"><i class="fas fa-arrow-right"></i></a></li>
+                                </ul>
+                            </nav>
+
                         </div>
                         <div class="col-md-3">
-                            <aside>
-
+                            <aside role="complementary" aria-label="side bar">
                                 <h5>Recent Posts</h5>
                                 <ul class="widget-link-list">
                                     <li><a class="widget-link" href="#">Lorem ipsum dolor sit amet</a></li>
@@ -152,7 +159,6 @@
                                     <li><a class="widget-link" href="#">December 2018</a></li>
                                     <li><a class="widget-link" href="#">November 2018</a></li>
                                 </ul>
-
                             </aside>
                         </div>
                     </div>
@@ -160,13 +166,13 @@
             </section>
 
             <!--Start of social media icons section-->
-            <section id="section-5" class="mt-5">
+            <section id="section-5" class="mt-5" role="region">
                 <h3 class="text-center">Follow Us</h3>
                 <div class="row text-center">
                     <div class="col-md-3"><i class="fab fa-facebook"> <a class="footer-link" href="#" title="Facebook">Facebook</a></i></div>
                     <div class="col-md-3"><i class="fab fa-twitter"> <a class="footer-link" href="#" title="Twitter">Twitter</a></i></div>
-                    <div class="col-md-3"><i class="fab fa-pinterest"> <a class="footer-link" href="#" title="Pinterest">Pinterest</a></i></div>
                     <div class="col-md-3"><i class="fab fa-instagram"> <a class="footer-link" href="#" title="Instagram">Instagram</a></i></div>
+                    <div class="col-md-3"><i class="fab fa-pinterest"> <a class="footer-link" href="#" title="Pinterest">Pinterest</a></i></div>
                 </div>
             </section>
 
@@ -176,18 +182,16 @@
         <footer id="section-footer" role="contentinfo" class="text-center mt-5">
             <div class="row">
                 <div class="col">
-                    <p class="small mb-1 text-uppercase">Showcase Theme</p>
-                    <p class="small mb-1">A Free HTML 5/Bootstrap 4 Theme</p>
+                    <p class="small mb-1">Copyright &copy; 2019</p>
+                    <p class="small mb-1">Showcase Theme by <a href="https://hub.bostonianadam.com/" title="BostonianAdam Hub">BostonianAdam Hub</a></p>
                 </div>
             </div>
         </footer>
 
     </div>
+    <div class="top-link fixed-bottom"><a href="#" title="Back to top"><i class="fas fa-caret-square-up fa-3x"></i><span class="sr-only sr-only-focusable">Back to top</span></a></div>
 
-    <div id="top-link" class="fixed-bottom back-to-top"><a href="#" title="Back to top"><i class="fas fa-arrow-alt-circle-up fa-5x"></i><span class="sr-only sr-only-focusable">Back to top</span></a></div>
-
-<script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="js/site-js.js"></script>
 
